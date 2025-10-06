@@ -58,6 +58,16 @@ npx prisma db seed
 ### 6. Levantar el servidor de desarrollo
 
 npm run dev
+
+### 7. Ingresar a la interfaz de la base de datos ejecutar
+
+npx prisma studio
+
+### 7. Para ingresar al panel de administracion
+
+usuario : admin
+password : password
+
 =======
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
