@@ -1,7 +1,9 @@
+//funcion para formatear moneda en pesos argentinos
+
 export function formatCurrency(amount: number) {
-    return new Intl.NumberFormat('en-US', {
+    return new Intl.NumberFormat('es-AR', {
         style: 'currency',
-        currency: 'USD'
+        currency: 'ARS'
     }).format(amount)
 }
 

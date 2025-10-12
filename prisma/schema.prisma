@@ -7,13 +7,15 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+//una categoria contiene varios productos
 model Category {
   id  Int   @id   @default(autoincrement())
   name  String
   slug  String
-  products  Product[]                                                 //una categoria contiene varios productos
+  products  Product[]                                                 
 }
 
+//Muchos productos pueden pertenecer a una misma categoría.
 model Product {
   id  Int   @id   @default(autoincrement())
   name  String

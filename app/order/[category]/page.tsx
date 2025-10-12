@@ -5,7 +5,7 @@ import Heading from "@/components/ui/Heading"
 import { prisma } from "@/src/lib/prisma" //importando la instancia de prisma reutiliza las conexiones existentes, en vez de crear una nueva conexion cada vez que se importa
 
 async function getProducts(category: string) {
-  const products = await prisma.product.findMany({ //trae todos los productos de la base de datos que pertenecen a la categoria que se pasa por parametro
+  const products = await prisma.product.findMany({ //trae todos los productos de la base de datos que pertenecen a la categoria que se pasa por parametro. ejemplo "hamburguesas". esto busca a todas las hamburguesas en la base de datos
     where: {
       category: {
         slug: category 

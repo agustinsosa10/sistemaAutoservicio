@@ -1,4 +1,4 @@
-//carrito de compras al momento de que el cliente cree la orden
+//resumen del pedido
 
 "use client"
 import { useMemo } from "react"
@@ -12,7 +12,7 @@ import { OrderSchema } from "@/src/schema"
 export default function OrderSummary() {
   const order = useStore((state) => state.order)
   const clearOrder = useStore((state) => state.clearOrder)
-  const total = useMemo(() => order.reduce((total, item) => total + (item.quantity * item.price), 0) , [order])
+  const total = useMemo(() => order.reduce((total, item) => total + (item.quantity * item.price), 0) , [order]) // calculo el total del pedido sumando el subtotal de cada producto en el carrito
 
 
   const handleCreateOrder = async (formData: FormData) => {

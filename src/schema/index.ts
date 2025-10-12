@@ -1,3 +1,5 @@
+//validaciones de datos con zod 
+
 import { z } from 'zod'
 
 export const OrderSchema = z.object({

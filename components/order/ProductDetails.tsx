@@ -1,4 +1,4 @@
-//componente que se usa para eliminar, aumentar o disminuir cantidad
+//componente que muestra los detalles de un producto en el pedido
 
 import { XCircleIcon, PlusIcon, MinusIcon } from '@heroicons/react/24/outline'
 import { OrderItem } from "@/src/types"
@@ -18,8 +18,8 @@ export default function ProductDetails({ item }: ProductDetailsProps) {
     const increaseQuantity = useStore((state) => state.increaseQuantity)
     const decreaseQuantity = useStore((state) => state.decreaseQuantity)
     const removeItem = useStore((state) => state.removeItem)
-    const disableDecreaseButton = useMemo(() => item.quantity === MIN_ITEMS, [item])
-    const disableIncreaseButton = useMemo(() => item.quantity === MAX_ITEMS, [item])
+    const disableDecreaseButton = useMemo(() => item.quantity === MIN_ITEMS, [item]) // si la cantidad del producto es igual a 1, deshabilito el boton de disminuir cantidad
+    const disableIncreaseButton = useMemo(() => item.quantity === MAX_ITEMS, [item]) // si la cantidad del producto es igual a 5, deshabilito el boton de aumentar cantidad
 
     return (
         <div className="shadow space-y-1 p-4 bg-white  border-t border-gray-200 ">
@@ -29,7 +29,7 @@ export default function ProductDetails({ item }: ProductDetailsProps) {
 
                     <button
                         type="button"
-                        onClick={() => removeItem(item.id)}
+                        onClick={() => removeItem(item.id)} //funcion que elimina el producto del carrito desde el boton (x)
                     >
                         <XCircleIcon className="text-red-600 h-8 w-8" />
                     </button>
@@ -40,7 +40,7 @@ export default function ProductDetails({ item }: ProductDetailsProps) {
                 <div className="flex gap-5 px-10 py-2 bg-gray-100 w-fit rounded-lg">
                     <button
                         type="button"
-                        onClick={() => decreaseQuantity(item.id)}
+                        onClick={() => decreaseQuantity(item.id)} // funcion que disminuye la cantidad del producto en el carrito desde el boton (-)
                         disabled={disableDecreaseButton}
                         className='disabled:opacity-20'
                     >
@@ -53,7 +53,7 @@ export default function ProductDetails({ item }: ProductDetailsProps) {
 
                     <button
                         type='button'
-                        onClick={() => increaseQuantity(item.id)}
+                        onClick={() => increaseQuantity(item.id)} // funcion que aumenta la cantidad del producto en el carrito desde el boton (+)
                         className="disabled:opacity-10"
                         disabled={disableIncreaseButton}
                     >
