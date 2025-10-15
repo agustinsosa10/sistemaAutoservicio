@@ -23,10 +23,10 @@ Otras dependencias (según package.json) incluyen utilidades de configuración, 
 
 🧰 Comandos útiles
 Comando Descripción
-npm run dev Ejecutar el servidor de desarrollo
-npx prisma studio Abrir cliente web para ver la BD
-npx prisma migrate dev Ejecutar migraciones
-npx prisma db seed Cargar datos iniciales a la BD
+npm run dev --> Ejecutar el servidor de desarrollo
+npx prisma studio --> Abrir cliente web para ver la BD
+npx prisma migrate dev --> Ejecutar migraciones
+npx prisma db seed --> Cargar datos iniciales a la BD
 
 🗄 Base de datos: PostgreSQL en Render
 Base de datos relacional modelada con Prisma. Puedes ver la estructura con:
@@ -71,4 +71,32 @@ usuario : admin
 password : password
 
 =======
+
+🧩 Funcionalidades principales
+
+Interfaz pública para ver productos, agregarlos al carrito y realizar compras.
+
+Panel de administración donde se puede crear, editar y eliminar productos.
+
+Gestión de usuarios (login de administrador).
+
+Migraciones automáticas y control de esquema con Prisma.
+
+Estilos responsivos usando Tailwind CSS.
+
+Organización modular del código (componentes, rutas, prisma, etc.).
+
+=======
+
+├── app/                  # Archivos de Next.js (páginas, layouts, rutas API)
+├── components/           # Componentes reutilizables de UI
+├── prisma/               # Esquema, migraciones y seeds
+├── public/               # Archivos estáticos (imágenes, fuentes)
+├── src/                  # Código fuente adicional (si aplica)
+├── .env                  # Variables de entorno
+├── next.config.mjs       # Configuración de Next.js
+├── tailwind.config.ts    # Configuración de Tailwind CSS
+├── tsconfig.json         # Configuración de TypeScript
+└── package.json          # Dependencias y scripts
+
 
