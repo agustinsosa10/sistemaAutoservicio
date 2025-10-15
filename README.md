@@ -1,23 +1,25 @@
 <<<<<<< HEAD
 # 🛒 Full Stack E-commerce con Next.js, TypeScript y Prisma
 
-Este proyecto es una aplicación *full-stack* construida con *Next.js* y *TypeScript, utilizando **Prisma ORM* para gestionar la base de datos *PostgreSQL* alojada en [Render](https://dashboard.render.com/).
+Sistema de autoservicio tipo e-commerce desarrollado con Next.js, TypeScript y Prisma, pensado para gestionar productos, ventas y administración de manera integrada. Este proyecto ofrece un panel de administración para gestionar el catálogo, y una interfaz pública para que los usuarios compren productos.
+
+Está estructurado como aplicación full-stack, donde el frontend y el backend conviven en un solo proyecto (Next.js con rutas API). La base de datos está manejada por Prisma ORM y utiliza PostgreSQL como motor de datos.
 
 ---
 
-## 🚀 Tecnologías principales
+## 🛠 Tecnologías utilizadas
 
-### 🧠 Next.js (App Router)
+Next.js (App Router): para SSR (server side rendering), SSG (generación estática) y rutas API integradas.
 
-- Framework basado en *React* que permite combinar:
-  - Renderizado del lado del servidor (SSR)
-  - Generación de páginas estáticas (SSG)
-  - Renderizado del cliente (CSR)
-  - Backend integrado mediante rutas API (app/api)
+TypeScript: para asegurar tipado estático que ayuda a evitar errores comunes.
 
-### 🛡 TypeScript
+Prisma: ORM para definir el esquema de base de datos, migraciones y consultas seguras.
 
-Superconjunto de JavaScript que agrega *tipado estático* para evitar errores comunes.
+PostgreSQL: solución de base de datos relacional.
+
+Tailwind CSS: para estilos y diseño responsivo.
+
+Otras dependencias (según package.json) incluyen utilidades de configuración, scripts, etc.
 
 🧰 Comandos útiles
 Comando Descripción
@@ -63,46 +65,10 @@ npm run dev
 
 npx prisma studio
 
-### 7. Para ingresar al panel de administracion
+### 8. Para ingresar al panel de administracion
 
 usuario : admin
 password : password
 
 =======
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
->>>>>>> 14cbf90 (subiendo proyecto)
