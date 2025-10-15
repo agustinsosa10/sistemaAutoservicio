@@ -70,7 +70,7 @@ npx prisma studio
 usuario : admin
 password : password
 
-=======
+---
 
 🧩 Funcionalidades principales
 
@@ -86,8 +86,9 @@ Estilos responsivos usando Tailwind CSS.
 
 Organización modular del código (componentes, rutas, prisma, etc.).
 
-=======
+---
 
+🧱 Estructura del Proyecto
 ├── app/                  # Archivos de Next.js (páginas, layouts, rutas API)
 ├── components/           # Componentes reutilizables de UI
 ├── prisma/               # Esquema, migraciones y seeds
@@ -99,4 +100,17 @@ Organización modular del código (componentes, rutas, prisma, etc.).
 ├── tsconfig.json         # Configuración de TypeScript
 └── package.json          # Dependencias y scripts
 
+---
+
+💡 Características Técnicas Destacadas
+
+Arquitectura full-stack en un único proyecto (frontend + backend en Next.js).
+
+Validaciones y control de estado en el frontend.
+
+ORM moderno con Prisma para un esquema limpio y migraciones controladas.
+
+Diseño responsivo y minimalista usando Tailwind CSS.
+
+Feedback visual mediante Toast Notifications.
 
