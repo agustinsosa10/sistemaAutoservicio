@@ -72,7 +72,7 @@ password : password
 
 ---
 
-🧩 Funcionalidades principales
+## 🧩 Funcionalidades principales
 
 Interfaz pública para ver productos, agregarlos al carrito y realizar compras.
 
@@ -88,29 +88,35 @@ Organización modular del código (componentes, rutas, prisma, etc.).
 
 ---
 
-🧱 Estructura del Proyecto
-├── app/                  # Archivos de Next.js (páginas, layouts, rutas API)
-├── components/           # Componentes reutilizables de UI
-├── prisma/               # Esquema, migraciones y seeds
-├── public/               # Archivos estáticos (imágenes, fuentes)
-├── src/                  # Código fuente adicional (si aplica)
-├── .env                  # Variables de entorno
-├── next.config.mjs       # Configuración de Next.js
-├── tailwind.config.ts    # Configuración de Tailwind CSS
-├── tsconfig.json         # Configuración de TypeScript
-└── package.json          # Dependencias y scripts
-
+## 🧱 Estructura del Proyecto
+```
+app/                 # Archivos de Next.js (páginas, layouts, rutas API)
+components/          # Componentes reutilizables de UI
+prisma/              # Esquema, migraciones y seeds
+public/              # Archivos estáticos (imágenes, fuentes)
+src/                 # Código fuente adicional (si aplica)
+.env                 # Variables de entorno
+next.config.mjs      # Configuración de Next.js
+tailwind.config.ts   # Configuración de Tailwind CSS
+tsconfig.json        # Configuración de TypeScript
+package.json         # Dependencias y scripts
+```
 ---
 
-💡 Características Técnicas Destacadas
+### 💡 Características Técnicas Destacadas
 
-Arquitectura full-stack en un único proyecto (frontend + backend en Next.js).
+#### 🧩 Arquitectura full-stack en un único proyecto  
+Frontend + backend en Next.js.
 
-Validaciones y control de estado en el frontend.
+#### ✅ Validaciones y control de estado en el frontend  
 
-ORM moderno con Prisma para un esquema limpio y migraciones controladas.
+#### 🧱 ORM moderno con Prisma  
+Esquema limpio y migraciones controladas.
 
-Diseño responsivo y minimalista usando Tailwind CSS.
+#### 🎨 Diseño responsivo y minimalista  
+Usando Tailwind CSS.
 
-Feedback visual mediante Toast Notifications.
+#### 🔔 Feedback visual  
+Mediante Toast Notifications.
+
 
