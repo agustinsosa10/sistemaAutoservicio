@@ -1,4 +1,4 @@
-//funcion para que el cocinero marque la orden como completa
+//funcion para que el cocinero marque la orden como lista
 
 "use server"
 import { revalidatePath} from 'next/cache'
@@ -24,7 +24,7 @@ export async function completeOrder(formData: FormData) {
                 }
             })
 
-            revalidatePath('/admin/orders')
+            revalidatePath('/admin/orders') //recarga la pagina cuando enviamos un formulario
         } catch (error) {
             console.log(error)
         }

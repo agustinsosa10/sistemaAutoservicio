@@ -24,7 +24,7 @@ export const authOptions: NextAuthOptions = {
   secret: process.env.NEXTAUTH_SECRET,
   session: {
     // La sesión expirará después de 30 minutos (1800 segundos)
-    maxAge: 1 * 60, // Tiempo en segundos
+    maxAge: 5 * 60, // Tiempo en segundos
     // Renueva automáticamente la sesión solo si está activa
     updateAge: 5 * 60, // Renueva la sesión si queda menos de 5 minutos para expirar
   },
