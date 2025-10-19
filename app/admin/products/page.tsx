@@ -8,10 +8,13 @@ import ProductSearchForm from '@/components/products/ProductSearchForm';
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 
+//total de productos que hay en la base de datos
 async function productCount() {
   return await prisma.product.count();
 }
 
+
+//funcion para mostrar unicamente 10 productos en la tabla de administrar productos
 async function getProducts(page: number, pageSize: number) {
   const skip = (page - 1) * pageSize;
   const products = await prisma.product.findMany({
@@ -24,7 +27,8 @@ async function getProducts(page: number, pageSize: number) {
   return products;
 }
 
-export type ProductsWithCategory = Awaited<ReturnType<typeof getProducts>>;
+
+export type ProductsWithCategory = Awaited<ReturnType<typeof getProducts>>
 
 export default async function ProductsPage({ searchParams }: { searchParams: { page: string } }) {
   // Verificar si el usuario está autenticado
@@ -33,8 +37,8 @@ export default async function ProductsPage({ searchParams }: { searchParams: { p
     redirect("/auth/signin");
   }
 
-  const page = +searchParams.page || 1;
-  const pageSize = 10;
+  const page = +searchParams.page || 1; //page = pagina actual
+  const pageSize = 10;                  //pagesize = cantidad de productos que queremos que se muestren
   if (page < 0) redirect('/admin/products');
 
   const productsData = getProducts(page, pageSize);

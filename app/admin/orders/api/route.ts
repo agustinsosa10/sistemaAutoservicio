@@ -1,3 +1,6 @@
+//con esta funcion obtenemos las ordenes que estan pendientes
+//asi las mostramos en la interfaz de orden pendientes
+
 import { prisma } from "@/src/lib/prisma"
 
 export const dynamic = 'force-dynamic'

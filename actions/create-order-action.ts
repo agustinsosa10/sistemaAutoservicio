@@ -1,4 +1,4 @@
-//funcion para que el cliente cree la orden
+//funcion que almacena la orden en la bd
 
 "use server"
 

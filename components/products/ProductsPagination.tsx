@@ -1,3 +1,5 @@
+//componente para navegar entre las paginas de los productos
+
 import Link from "next/link";
 
 type ProductsPaginationProps = {
@@ -6,12 +8,13 @@ type ProductsPaginationProps = {
 }
 
 export default function ProductsPagination({ page, totalPages }: ProductsPaginationProps) {
-    const pages = Array.from({length: totalPages}, (_, i) => i+ 1 )
+    const pages = Array.from({length: totalPages}, (_, i) => i+ 1 ) //generamos el numero de paginas en base a totalpages
+
 
 
     return (
         <nav className='flex justify-center py-10'>
-
+            //boton anterior, solo se muestra si no estas en la primer pag
             {page > 1 && (
                 <Link
                     href={`/admin/products?page=${page - 1}`}
@@ -27,6 +30,7 @@ export default function ProductsPagination({ page, totalPages }: ProductsPaginat
                 >{currentPage}</Link>
             ))}
 
+            //boton siguiente, solo se muestra si no estas en la ultima pag
             {page < totalPages && (
                 <Link
                     href={`/admin/products?page=${page + 1}`}

@@ -1,4 +1,4 @@
-//funcion para que el cocinero marque la orden como lista
+//funcion que guarda las ordenes completas en la bd
 
 "use server"
 import { revalidatePath} from 'next/cache'
