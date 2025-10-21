@@ -2,6 +2,7 @@
 
 import { z } from 'zod'
 
+//validacion para las ordenes
 export const OrderSchema = z.object({
     name: z.string()
             .min(1, 'Tu Nombre es Obligatorio'),
@@ -22,12 +23,14 @@ export const OrderIdSchema = z.object({
                 .refine( value => value > 0, {message: 'Hay errores'} )
 })
 
+//validacion para buscar un producto
 export const SearchSchema = z.object({
     search: z.string()
                 .trim()
                 .min(1, {message: 'La búsqueda no puede ir vacia'})
 })
 
+//validacion para crear un producto
 export const ProductSchema = z.object({
     name: z.string()
         .trim()

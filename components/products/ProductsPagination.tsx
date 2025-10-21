@@ -14,7 +14,8 @@ export default function ProductsPagination({ page, totalPages }: ProductsPaginat
 
     return (
         <nav className='flex justify-center py-10'>
-            //boton anterior, solo se muestra si no estas en la primer pag
+            {//boton anterior, solo se muestra si no estas en la primer pag
+            }
             {page > 1 && (
                 <Link
                     href={`/admin/products?page=${page - 1}`}
@@ -30,7 +31,8 @@ export default function ProductsPagination({ page, totalPages }: ProductsPaginat
                 >{currentPage}</Link>
             ))}
 
-            //boton siguiente, solo se muestra si no estas en la ultima pag
+            {//boton siguiente, solo se muestra si no estas en la ultima pag
+}   
             {page < totalPages && (
                 <Link
                     href={`/admin/products?page=${page + 1}`}

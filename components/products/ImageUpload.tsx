@@ -1,4 +1,4 @@
-//componente para subir la imagen del producto
+//componente para subir la imagen del producto, guardandose en la nube
 
 "use client"
 import { getImagePath } from '@/src/utils'
@@ -51,7 +51,8 @@ export default function ImageUpload({image} : {image: string | undefined}) {
                             )}
                         </div>
                     </div>
-
+                    {//muestra la imagen actual
+                    }        
                     {image && !imageUrl && (
                         <div className='space-y-2'>
                             <label>Imagen Actual:</label>
