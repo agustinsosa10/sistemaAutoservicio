@@ -72,8 +72,7 @@ export const useStore = create<Store>((set, get) => ({
     //eliminar un producto del carrito
     removeItem: (id) => {
         set((state) => ({
-            order: state.order.filter(item => item.id !== id)
-        }))
+            order: state.order.filter(item => item.id !== id)         }))
     },
 
     //vaciar el carrito

@@ -6,7 +6,7 @@ import { prisma } from "@/src/lib/prisma"
 import { OrderSchema } from "@/src/schema"
 
 export async function createOrder(data: unknown) {
-    const result = OrderSchema.safeParse(data)
+    const result = OrderSchema.safeParse(data) //valido los datos que vienen del cliente con zod. si no son validos, retorno los errores
 
     if(!result.success) {
         return {

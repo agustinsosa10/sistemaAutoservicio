@@ -7,7 +7,7 @@ export type OrderItem = Pick<Product, 'id' | 'name' | 'price'> & {
     subtotal: number
 } 
 
-export type OrderWithProducts = Order & {
+export type OrderWithProducts = Order & { //definimos el tipo de dato que va a tener una orden con sus productos, en la seccion de ordenes pendientes
     orderProducts: (OrderProducts & {
         product: Product
     })[]

@@ -1,3 +1,5 @@
+//este componente es un enlace que se usa en el panel de administracion para navegar entre las diferentes secciones del panel
+
 "use client"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
