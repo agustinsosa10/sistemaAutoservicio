@@ -38,7 +38,7 @@ export default function OrderCard({ order }: OrderCardProps) {
             <form action={completeOrder}>
                 <input 
                     type="hidden"
-                    value={order.id}
+                    value={order.id} //enviamos el id de la orden a la funcion completeOrder
                     name="order_id"
                 />
                 <input

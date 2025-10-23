@@ -1,4 +1,4 @@
-//interfaz con la lista de todos los productos
+//interfaz con la lista de todos los productos en la seccion de administrador
 
 "use client";
 

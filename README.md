@@ -1,33 +1,37 @@
-<<<<<<< HEAD
-# 🛒 Full Stack E-commerce con Next.js, TypeScript y Prisma
+# 🛒 Sistema de Autoservicio
 
-Este proyecto es una aplicación *full-stack* construida con *Next.js* y *TypeScript, utilizando **Prisma ORM* para gestionar la base de datos *PostgreSQL* alojada en [Render](https://dashboard.render.com/).
+Sistema de Comanda para establecimientos gastronómicos, desarrollado como parte de la Práctica Profesional Supervisada de la carrera Programador Universitario de Sistemas (UNVIME).
+Este proyecto fue implementado utilizando tecnologías modernas como Next.js, React, TypeScript, Prisma, NextAuth.js, SWR, Zod, Cloudinary, React Toastify, Tailwind CSS y desplegado en Vercel.
+El sistema permite gestionar pedidos de manera digital a través de tres interfaces principales —cliente, cocina/administración y pedidos listos— con el objetivo de optimizar la comunicación interna, reducir errores y mejorar la experiencia del usuario dentro del entorno gastronómico.
+
 
 ---
 
-## 🚀 Tecnologías principales
+## 🛠 Tecnologías utilizadas
 
-### 🧠 Next.js (App Router)
+Next.js (App Router): para SSR (server side rendering), SSG (generación estática) y rutas API integradas.
 
-- Framework basado en *React* que permite combinar:
-  - Renderizado del lado del servidor (SSR)
-  - Generación de páginas estáticas (SSG)
-  - Renderizado del cliente (CSR)
-  - Backend integrado mediante rutas API (app/api)
+TypeScript: para asegurar tipado estático que ayuda a evitar errores comunes.
 
-### 🛡 TypeScript
+Prisma: ORM para definir el esquema de base de datos, migraciones y consultas seguras.
 
-Superconjunto de JavaScript que agrega *tipado estático* para evitar errores comunes.
+PostgreSQL: solución de base de datos relacional.
 
-🧰 Comandos útiles
-Comando Descripción
-npm run dev Ejecutar el servidor de desarrollo
-npx prisma studio Abrir cliente web para ver la BD
-npx prisma migrate dev Ejecutar migraciones
-npx prisma db seed Cargar datos iniciales a la BD
+Tailwind CSS: para estilos y diseño responsivo.
 
-🗄 Base de datos: PostgreSQL en Render
-Base de datos relacional modelada con Prisma. Puedes ver la estructura con:
+Otras dependencias (según package.json) incluyen utilidades de configuración, scripts, etc.
+
+---
+
+## 🧰 Comandos útiles
+
+npm run dev --> Ejecutar el servidor de desarrollo
+
+npx prisma studio --> Abrir cliente web para ver la BD
+
+npx prisma migrate dev --> Ejecutar migraciones
+
+npx prisma db seed --> Cargar datos iniciales a la BD
 
 ---
 
@@ -63,46 +67,54 @@ npm run dev
 
 npx prisma studio
 
-### 7. Para ingresar al panel de administracion
+### 8. Para ingresar al panel de administracion
 
 usuario : admin
 password : password
 
-=======
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+---
 
-## Getting Started
+## 🧩 Funcionalidades principales
 
-First, run the development server:
+Interfaz pública para ver productos, agregarlos al carrito y realizar compras.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Panel de administración donde se puede crear, editar y eliminar productos.
+
+Gestión de usuarios (login de administrador).
+
+Interfaz para ver pedidos listos
+
+---
+
+## 🧱 Estructura del Proyecto
 ```
+app/                 # Archivos de Next.js (páginas, layouts, rutas API)
+components/          # Componentes reutilizables de UI
+prisma/              # Esquema, migraciones y seeds
+public/              # Archivos estáticos (imágenes, fuentes)
+src/                 # Código fuente adicional (si aplica)
+.env                 # Variables de entorno
+next.config.mjs      # Configuración de Next.js
+tailwind.config.ts   # Configuración de Tailwind CSS
+tsconfig.json        # Configuración de TypeScript
+package.json         # Dependencias y scripts
+```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 💡 Características Técnicas Destacadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### 🧩 Arquitectura full-stack en un único proyecto  
+Frontend + backend en Next.js.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### ✅ Validaciones y control de estado en el frontend  
 
-## Learn More
+#### 🧱 ORM moderno con Prisma  
+Esquema limpio y migraciones controladas.
 
-To learn more about Next.js, take a look at the following resources:
+#### 🎨 Diseño responsivo y minimalista  
+Usando Tailwind CSS.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### 🔔 Feedback visual  
+Mediante Toast Notifications.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
->>>>>>> 14cbf90 (subiendo proyecto)

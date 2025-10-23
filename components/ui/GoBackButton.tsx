@@ -7,7 +7,7 @@ export default function GoBackButton() {
     const router = useRouter()
     return (
         <button
-            onClick={() => router.back()}
+            onClick={() => router.back()} //vuelve a la pagina donde estaba
             className='bg-amber-400 w-full lg:w-auto text-xl px-10 py-3 text-center font-bold cursor-pointer'
         >Volver</button>
     )

@@ -1,4 +1,4 @@
-//funcion que utiliza el administrador para crear un nuevo producto
+//funcion para crear un nuevo producto y almacenarlo en la bd
 
 "use server"
 

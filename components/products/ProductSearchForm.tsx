@@ -6,7 +6,7 @@ import { toast } from "react-toastify"
 import { useRouter } from "next/navigation"
 
 export default function ProductSearchForm() {
-    const router = useRouter()
+    const router = useRouter() //useRouter() cambiar de url sin recargar la pag
  
     const handleSearchForm = (formData: FormData) => {
         const data = {
@@ -19,7 +19,7 @@ export default function ProductSearchForm() {
             })
             return
         }
-        router.push(`/admin/products/search?search=${result.data.search}`)
+        router.push(`/admin/products/search?search=${result.data.search}`) //redirige a /products/search
     }
 
     return (
