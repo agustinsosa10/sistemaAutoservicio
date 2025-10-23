@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# 🛒 Full Stack E-commerce con Next.js, TypeScript y Prisma
+# 🛒 Sistema de Autoservicio
 
 Sistema de autoservicio tipo e-commerce desarrollado con Next.js, TypeScript y Prisma, pensado para gestionar productos, ventas y administración de manera integrada. Este proyecto ofrece un panel de administración para gestionar el catálogo, y una interfaz pública para que los usuarios compren productos.
 
@@ -22,14 +22,17 @@ Tailwind CSS: para estilos y diseño responsivo.
 Otras dependencias (según package.json) incluyen utilidades de configuración, scripts, etc.
 
 🧰 Comandos útiles
-Comando Descripción
+
 npm run dev --> Ejecutar el servidor de desarrollo
+
 npx prisma studio --> Abrir cliente web para ver la BD
+
 npx prisma migrate dev --> Ejecutar migraciones
+
 npx prisma db seed --> Cargar datos iniciales a la BD
 
 🗄 Base de datos: PostgreSQL en Render
-Base de datos relacional modelada con Prisma. Puedes ver la estructura con:
+Base de datos relacional modelada con Prisma. 
 
 ---
 
