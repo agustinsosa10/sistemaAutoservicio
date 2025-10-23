@@ -1,9 +1,10 @@
 <<<<<<< HEAD
 # 🛒 Sistema de Autoservicio
 
-Sistema de autoservicio tipo e-commerce desarrollado con Next.js, TypeScript y Prisma, pensado para gestionar productos, ventas y administración de manera integrada. Este proyecto ofrece un panel de administración para gestionar el catálogo, y una interfaz pública para que los usuarios compren productos.
+Sistema de Comanda para establecimientos gastronómicos, desarrollado como parte de la Práctica Profesional Supervisada de la carrera Programador Universitario de Sistemas (UNVIME).
+Este proyecto fue implementado utilizando tecnologías modernas como Next.js, React, TypeScript, Prisma, NextAuth.js, SWR, Zod, Cloudinary, React Toastify, Tailwind CSS y desplegado en Vercel.
+El sistema permite gestionar pedidos de manera digital a través de tres interfaces principales —cliente, cocina/administración y pedidos listos— con el objetivo de optimizar la comunicación interna, reducir errores y mejorar la experiencia del usuario dentro del entorno gastronómico.
 
-Está estructurado como aplicación full-stack, donde el frontend y el backend conviven en un solo proyecto (Next.js con rutas API). La base de datos está manejada por Prisma ORM y utiliza PostgreSQL como motor de datos.
 
 ---
 
@@ -21,7 +22,9 @@ Tailwind CSS: para estilos y diseño responsivo.
 
 Otras dependencias (según package.json) incluyen utilidades de configuración, scripts, etc.
 
-🧰 Comandos útiles
+---
+
+## 🧰 Comandos útiles
 
 npm run dev --> Ejecutar el servidor de desarrollo
 
@@ -30,9 +33,6 @@ npx prisma studio --> Abrir cliente web para ver la BD
 npx prisma migrate dev --> Ejecutar migraciones
 
 npx prisma db seed --> Cargar datos iniciales a la BD
-
-🗄 Base de datos: PostgreSQL en Render
-Base de datos relacional modelada con Prisma. 
 
 ---
 
@@ -83,11 +83,7 @@ Panel de administración donde se puede crear, editar y eliminar productos.
 
 Gestión de usuarios (login de administrador).
 
-Migraciones automáticas y control de esquema con Prisma.
-
-Estilos responsivos usando Tailwind CSS.
-
-Organización modular del código (componentes, rutas, prisma, etc.).
+Interfaz para ver pedidos listos
 
 ---
 
