@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🛒 Sistema de Autoservicio
 
 Sistema de Comanda para establecimientos gastronómicos, desarrollado como parte de la Práctica Profesional Supervisada de la carrera Programador Universitario de Sistemas (UNVIME).
