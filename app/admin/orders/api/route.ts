@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 //funcion para obtener las ordenes pendientes (status: false)
-=======
 //con esta funcion obtenemos las ordenes que estan pendientes
 //asi las mostramos en la interfaz de orden pendientes
 
->>>>>>> 30e9a2101c80e099f20305e255c2e9be3f14bec0
 import { prisma } from "@/src/lib/prisma"
 
 export const dynamic = 'force-dynamic'
